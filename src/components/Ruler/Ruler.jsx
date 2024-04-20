@@ -9,7 +9,7 @@ const Ruler = () => {
   
   return (
     <div className='ruler'>
-      {lines.map( (lineNo) =>  <div className='ruler-line'>{lineNo}</div>)}
+      {lines.map( (lineNo, index) =>  <div key={index} className='ruler-line'>{lineNo}</div>)}
     </div>
   );
 };

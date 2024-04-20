@@ -46,8 +46,9 @@ const TerminalInstructions = () => {
 
   return (
     <div className="terminal-instructions">
-      {instructions.map((inst) => (
+      {instructions.map((inst, index) => (
         <Instruction
+          key={index}
           num={inst.num}
           title={inst.title}
           description={inst.description}

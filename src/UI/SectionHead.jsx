@@ -1,3 +1,5 @@
+import SHeadIntro from "./SHeadIntro";
+
 const SectionHead = (props) => {
   return (
     <>
@@ -7,9 +9,7 @@ const SectionHead = (props) => {
       <div className="head-div" >
         <div className={`head-container ${props.withPaddingBottom ? "" : "head-container-no-padding"}`}>
           <h2 className="head-title">&lt;{props.title}&gt;</h2>
-          <p className="head-intro">
-            {props.intro}
-          </p>
+          <SHeadIntro intro={props.intro} />
         </div>
       </div>
     </>

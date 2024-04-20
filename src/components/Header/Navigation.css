@@ -1,16 +1,20 @@
 .navbar {
-    height: 100%;
-    display: flex;
-    justify-content: end;
+  height: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 .nav-items-list {
-    margin: 0;
-    padding: 0;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 li {
+  display: inline-flex;
+}
+
+li > a {
   text-decoration: none;
   display: inline-flex;
   height: 100%;
@@ -21,11 +25,11 @@ li {
   letter-spacing: 0.5px;
 }
 
-li:not(.selected):hover{
-    color: #9a99ff;
-    transition: all .2s linear;
+li > a:hover {
+  color: #9a99ff;
+  transition: all 0.2s linear;
 }
 
-.selected{
-    color: #2fcbef;
+li > a.active {
+  color: #2fcbef;
 }

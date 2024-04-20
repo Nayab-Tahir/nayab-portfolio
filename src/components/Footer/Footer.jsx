@@ -7,6 +7,7 @@ const Footer = () => {
       <div className="footer">
         <Navigation />
       </div>
+      <div className="footer footer-copyright">copyright © nayab-tahir</div>
     </footer>
   );
 };
