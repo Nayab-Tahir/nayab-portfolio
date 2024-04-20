@@ -1,0 +1,23 @@
+.greetings {
+    margin-bottom: 20px;
+  }
+  
+  .greetings > h6 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.15vw;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .section > .career {
+    margin-bottom: 40px;
+  }
+  
+  .arrow > h5 {
+    margin: 0;
+    color: white;
+    font-size: 2vw;
+    transform: rotate(90deg);
+    background: none;
+  }

@@ -1,0 +1,107 @@
+/* ----Module------ */
+
+.module {
+  margin: 0 4%;
+  padding-top: 4.3%;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----Section------ */
+
+.section {
+  text-align: center;
+  margin-top: 2%;
+}
+
+/* ---SectionHead--- */
+
+.head-symbol {
+  margin-bottom: 20px;
+}
+
+.head-symbol > h5 {
+  margin: 0;
+  font-size: 2vw;
+  color: rgb(154, 153, 255);
+}
+
+.head-div {
+  margin-bottom: 20px;
+}
+
+.head-container {
+  padding: 0 32% 3%;
+}
+
+.head-container-no-padding {
+  padding-bottom: 0;
+}
+
+h2.head-title {
+  font-size: 7vw;
+  color: white;
+  margin: 0 0 20px;
+  display: block;
+  line-height: 0.8em;
+}
+
+p.head-intro {
+  margin: 0;
+  color: rgb(230, 219, 116);
+  font-size: 1.29vw;
+
+}
+
+/* ----Button---- */
+
+.button > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #2fcbef;
+  padding: 20px 40px;
+}
+
+.button > a:hover{
+  background-color: #9a99ff;
+  transition: all .2s linear;
+}
+
+
+/* --AnimatedHeading-- */
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.heading-content {
+  color: #e6db74;
+  font-size: 8vw;
+  line-height: 0.8em;
+  background: none;
+}
+
+.heading-cursor {
+  color: #e6db74;
+  font-size: 8vw;
+  line-height: 0.8em;
+  animation: blink 0.8s infinite;
+  background: none;
+}
+
+.heading-braces {
+  color: white;
+  font-size: 8vw;
+  line-height: 0.8em;
+  background: none;
+}

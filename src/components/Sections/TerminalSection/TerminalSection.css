@@ -1,0 +1,114 @@
+.terminal-div {
+  height: 418px;
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* For Terminal Instructions */
+
+.terminal-instructions {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7px;
+}
+
+.instruction {
+  width: 100%;
+  height: 12.5%;
+  display: flex;
+}
+
+.instruction-num {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  width: 7%;
+  color: #9a99ff;
+}
+
+.instruction-title {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  width: 15%;
+  color: white;
+}
+
+.instruction-description {
+  display: flex;
+  align-items: center;
+  color: #e6db74;
+  text-align: left;
+  flex-grow: 1;
+}
+
+
+/* For Terminal */
+
+.terminal {
+  height: 100%;
+  width: 60%;
+  border-left: 1px solid rgba(255, 255, 255, 0.012);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.05);
+}
+
+.terminal-head {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 7%;
+  color: black;
+  border-radius: 8px 8px 0 0;
+}
+
+.terminal-body-line {
+  padding-left: 4px;
+  display: flex;
+  background: none;
+}
+
+.terminal-body-title{
+  text-align: start;
+  color: #9a99ff;
+  background: none;
+}
+
+.terminal-body-command-container {
+  flex: 1;
+  background: none;
+}
+
+#command {
+  margin: 0;
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  caret-color: #9a99ff;
+  color: white;
+}
+
+.terminal-body-output {
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  justify-content: space-between;
+  background: none;
+}
+
+.terminal-body-output > div {
+  color: #2fcbef;
+  background: none;
+}
+
+.terminal-executed-command {
+  color: #e6db74;
+  background: none;
+}

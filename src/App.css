@@ -1,0 +1,9 @@
+* {
+  font-family: 'VT323', monospace;
+  font-weight: 400;
+  line-height: 1em;
+  font-size: 21px;
+  color: #7A7A7A;
+  background-color: rgb(33, 33, 33);
+  -webkit-font-smoothing: antialiased;
+}
