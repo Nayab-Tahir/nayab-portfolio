@@ -1,5 +1,5 @@
-import Section from "../../../UI/Section";
-import SHeadIntro from "../../../UI/SHeadIntro";
+import Section from "../../../UI/Section/Section";
+import SHeadIntro from "../../../UI/Section/SHeadIntro";
 import AnimatedHeading from "../../../UI/AnimatedHeading";
 import useAnimateTextList from "../../../Hooks/useAnimateTextList";
 import "./ResumeSection.css";

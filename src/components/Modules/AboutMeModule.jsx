@@ -1,10 +1,10 @@
 import Module from "../../UI/Module";
-import AboutSection from "../Sections/AboutSection/AboutSection";
+import AboutMeSection from "../Sections/AboutMeSection/AboutMeSection";
 
 const AboutMeModule = () => {
   return (
     <Module styleClass="about-module">
-      <AboutSection />
+      <AboutMeSection />
     </Module>
   );
 };

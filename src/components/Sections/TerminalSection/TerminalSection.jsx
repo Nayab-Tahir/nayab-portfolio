@@ -1,6 +1,6 @@
 import Terminal from "./Terminal/Terminal";
 import TerminalInstructions from "./TerminalInstructions/TerminalInstructions";
-import Section from "../../../UI/Section";
+import Section from "../../../UI/Section/Section";
 import "./TerminalSection.css";
 
 const TerminalSection = () => {

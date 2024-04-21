@@ -1,7 +1,7 @@
-import Section from "../../../UI/Section";
-import SectionHead from "../../../UI/SectionHead";
+import Section from "../../../UI/Section/Section";
+import SectionHead from "../../../UI/Section/SectionHead";
 import Button from "../../../UI/Button";
-import "./AboutSection.css";
+import "./AboutMeSection.css";
 
 const introduction = {
   intro:
@@ -12,7 +12,7 @@ const introduction = {
     "...As an aspiring data scientist, I possess advanced skills in Python, SQL, and TensorFlow, specializing in machine learning and deep learning techniques. My experience includes implementing neural networks and convolutional neural networks for image recognition tasks. I am driven by a passion for extracting meaningful insights from complex datasets and am eager to contribute to projects at the forefront of AI innovation;",
 };
 
-const AboutSection = () => {
+const AboutMeSection = () => {
   return (
     <Section styleClass="section-none">
       <SectionHead
@@ -33,9 +33,9 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <Button text="read_more" fontSize="22px" />
+      <Button path="/nayab-portfolio/about" text="read_more" fontSize="22px" />
     </Section>
   );
 };
 
-export default AboutSection;
+export default AboutMeSection;

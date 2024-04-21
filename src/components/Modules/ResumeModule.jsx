@@ -1,6 +1,5 @@
 import Module from "../../UI/Module";
 import ResumeSection from "../Sections/ResumeSection/ResumeSection";
-import TerminalSection from "../Sections/TerminalSection/TerminalSection";
 
 const ResumeModule = () => {
   return (
@@ -11,3 +10,4 @@ const ResumeModule = () => {
 };
 
 export default ResumeModule;
+ 

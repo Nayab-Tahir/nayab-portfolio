@@ -1,5 +1,5 @@
-import Section from "../../../UI/Section";
-import SectionHead from "../../../UI/SectionHead";
+import Section from "../../../UI/Section/Section";
+import SectionHead from "../../../UI/Section/SectionHead";
 import ExperienceRow from "../../../UI/ExperienceRow";
 import "./ExperienceSection.css";
 

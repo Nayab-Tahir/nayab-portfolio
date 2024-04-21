@@ -1,5 +1,5 @@
-import Section from "../../../UI/Section";
-import SectionHead from "../../../UI/SectionHead";
+import Section from "../../../UI/Section/Section";
+import SectionHead from "../../../UI/Section/SectionHead";
 import useAnimateText from "../../../Hooks/useAnimateText";
 import AnimatedHeading from "../../../UI/AnimatedHeading";
 import Button from "../../../UI/Button";

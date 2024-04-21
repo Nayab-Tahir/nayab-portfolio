@@ -1,4 +1,4 @@
-import Section from "../../../UI/Section";
+import Section from "../../../UI/Section/Section";
 import AnimatedHeading from "../../../UI/AnimatedHeading";
 import useAnimateTextList from "../../../Hooks/useAnimateTextList";
 import "./IntroSection.css";

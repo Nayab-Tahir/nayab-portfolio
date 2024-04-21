@@ -1,14 +1,14 @@
 import SHeadIntro from "./SHeadIntro";
+import HeadSymbol from "../HeadSymbol";
+import SHeadTitle from "./SHeadTitle";
 
 const SectionHead = (props) => {
   return (
     <>
-      <div className="head-symbol">
-        <h5>&#123;{props.symbol}&#125;</h5>
-      </div>
+      <HeadSymbol symbol={props.symbol} />
       <div className="head-div" >
         <div className={`head-container ${props.withPaddingBottom ? "" : "head-container-no-padding"}`}>
-          <h2 className="head-title">&lt;{props.title}&gt;</h2>
+          <SHeadTitle title={props.title} />
           <SHeadIntro intro={props.intro} />
         </div>
       </div>

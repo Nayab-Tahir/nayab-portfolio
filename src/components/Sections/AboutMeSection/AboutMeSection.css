@@ -40,3 +40,20 @@
   margin-bottom: 1.6em;
   color: #e6db74;
 }
+
+/* ---Detailed--- */
+.desc-container{
+  padding: 1.1% 16.5%;
+}
+
+.short-desc{
+  padding: 2.5% 0;
+  color: #e6db74;
+  font-size: 2.6vw;
+}
+
+.detailed-desc{
+  color: white;
+  padding: 0 11%;
+  font-size: 1.29vw;
+}

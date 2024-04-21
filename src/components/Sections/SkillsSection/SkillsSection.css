@@ -1,0 +1,13 @@
+.skill-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  height: 29vh;
+  margin: 0 22px;
+  overflow: hidden;
+  display: flex;
+}
+
+.skill-row > hr {
+    margin: 0px;
+    color:rgba(255, 255, 255, 0.12);
+}
