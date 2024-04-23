@@ -1,11 +1,10 @@
 import Section from "../../../UI/Section/Section";
 import SHeadIntro from "../../../UI/Section/SHeadIntro";
 import AnimatedHeading from "../../../UI/AnimatedHeading";
-import useAnimateTextList from "../../../Hooks/useAnimateTextList";
+import useAnimateText from "../../../Hooks/useAnimateText";
 import ExperienceRow from "../../../UI/ExperienceRow";
 import "./ServicesSection.css";
 
-const headingList = ["services"];
 const servicesIntro =
   "…lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, eros at sagittis facilisis, ante est rutrum ligula, at interdum eros sapien vel magna.";
   const services = [
@@ -53,7 +52,7 @@ const servicesIntro =
 
 
 const ServicesIntroSection = () => {
-  const heading = useAnimateTextList(headingList);
+  const heading = useAnimateText("services");
 
   return (
     <Section>

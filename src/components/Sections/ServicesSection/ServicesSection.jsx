@@ -29,7 +29,7 @@ const ServicesSection = () => {
           <AnimatedHeading content={service_3} color="#9a99ff" size="7vw" />
         </div>
       </div>
-      <Button text="all_services" />
+      <Button path="/nayab-portfolio/services" text="all_services" />
     </Section>
   );
 };

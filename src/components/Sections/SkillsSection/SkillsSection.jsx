@@ -43,8 +43,8 @@ const SkillsSection = () => {
         intro="...lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis."
         withPaddingBottom={true}
       />
-      {skills.map((skillpair) => (
-        <SkillRow skill1={skillpair[0]} skill2={skillpair[1]} />
+      {skills.map((skillpair, index) => (
+        <SkillRow key={index} skill1={skillpair[0]} skill2={skillpair[1]} />
       ))}
     </Section>
   );

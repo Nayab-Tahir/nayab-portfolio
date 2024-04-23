@@ -1,15 +1,14 @@
 import Section from "../../../UI/Section/Section";
 import SHeadIntro from "../../../UI/Section/SHeadIntro";
 import AnimatedHeading from "../../../UI/AnimatedHeading";
-import useAnimateTextList from "../../../Hooks/useAnimateTextList";
+import useAnimateText from "../../../Hooks/useAnimateText";
 import "./ResumeSection.css";
 
-const headingList = ["resume"];
 const resumeIntro =
   "…lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, eros at sagittis facilisis, ante est rutrum ligula, at interdum eros sapien vel magna.";
 
 const ResumeSection = () => {
-  const heading = useAnimateTextList(headingList);
+  const heading = useAnimateText("resume");
 
   return (
     <Section>

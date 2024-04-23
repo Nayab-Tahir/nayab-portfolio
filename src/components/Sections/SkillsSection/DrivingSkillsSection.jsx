@@ -40,8 +40,8 @@ const DrivingSkillsSection = () => {
     <Section styleClass="section-none">
       <HeadSymbol symbol="::" />
       <SHeadTitle title="what drives my work" />
-      {skills.map((skillpair) => (
-        <SkillRow skill1={skillpair[0]} skill2={skillpair[1]} />
+      {skills.map((skillpair, index) => (
+        <SkillRow key={index} skill1={skillpair[0]} skill2={skillpair[1]} />
       ))}
     </Section>
   );

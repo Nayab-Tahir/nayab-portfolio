@@ -1,9 +1,8 @@
 import Section from "../../../UI/Section/Section";
 import AnimatedHeading from "../../../UI/AnimatedHeading";
-import useAnimateTextList from "../../../Hooks/useAnimateTextList";
+import useAnimateText from "../../../Hooks/useAnimateText";
 import "./AboutMeSection.css";
 
-const headingList = ["about_me"];
 const desc = {
   "short-desc":
     "...I have 9 months of experience transitioning from Fintech Java development to Junior Data Scientist, I hold a BS in Software Engineering, specializing in machine learning and deep learning with a profound passion;",
@@ -12,7 +11,7 @@ const desc = {
 };
 
 const AboutDetailedSection = () => {
-  const heading = useAnimateTextList(headingList);
+  const heading = useAnimateText("about_me");
 
   return (
     <Section>
