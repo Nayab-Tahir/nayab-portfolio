@@ -7,30 +7,30 @@ import SHeadTitle from "../../../UI/Section/SHeadTitle";
 const skills = [
   [
     {
-      symbol: ".p",
-      title: "python",
+      symbol: "tw",
+      title: "team work",
       description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
+        "I value collaboration and believe in power of collective effort, where diverse skills come together to achieve common goals;",
     },
     {
-      symbol: ".j",
-      title: "java",
+      symbol: "in",
+      title: "innovation",
       description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
+        "I'm driven by passion for pushing boundaries and exploring new ideas, constantly seeking innovative solutions to complex problems;",
     },
   ],
   [
     {
-      symbol: ".c",
-      title: "c/c++",
+      symbol: "ex",
+      title: "excellence",
       description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
+        "My commitment to excellence fuels my pursuit of continuous improvement, striving to deliver high-quality outcomes in my work;",
     },
     {
-      symbol: ".t",
-      title: "tensorflow",
+      symbol: "hw",
+      title: "hard work",
       description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
+        "I embrace challenges with dedication, recognizing that perseverance is key to overcoming obstacles and achieving success;",
     },
   ],
 ];

@@ -6,9 +6,9 @@ import "./AboutMeSection.css";
 const headingList = ["about_me"];
 const desc = {
   "short-desc":
-    "...I have over 12 years of experience in web development, with a strong background in both front-end and back-end technologies. Nullam facilisis mollis mauris, vitae mollis leo viverra eu. In cursus commodo interdum;",
+    "...I have 9 months of experience transitioning from Fintech Java development to Junior Data Scientist, I hold a BS in Software Engineering, specializing in machine learning and deep learning with a profound passion;",
   "detailed-desc":
-    "…lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis mollis mauris, vitae mollis leo viverra eu. In cursus commodo interdum. Duis vitae ex massa. Quisque luctus diam at mi mollis mollis. Proin nec ex non lectus molestie laoreet sollicitudin auctor urna. Suspendisse varius diam vel egestas finibus. Fusce vel aliquet lectus. Nulla dapibus, turpis nec sodales congue, lectus ipsum vehicula massa, nec pulvinar.",
+    "…With a background in BS Software Engineering, my proficiency spans Python, Java, C/C++, and frameworks such as TensorFlow, Keras, scikit-learn, matplotlib, seaborn, as I eagerly embrace the diverse realms of data science. My experience includes working on a MERN stack project during my final year. I have also completed Coursera Specializations in machine learning and deep learning, further solidifying my expertise in these areas.",
 };
 
 const AboutDetailedSection = () => {

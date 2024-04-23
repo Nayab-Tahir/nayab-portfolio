@@ -9,7 +9,7 @@ const ContactSection = () => {
       <SectionHead
         symbol="*"
         title="contact_me"
-        intro="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores praesentium veniam vero doloremque corrupti earum."
+        intro="Feel free to reach out to discuss potential collaborations, projects, or any exciting opportunities ahead!"
       />
       <div className="contact-container">
         <div className="form-container">

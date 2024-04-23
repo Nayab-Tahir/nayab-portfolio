@@ -15,7 +15,7 @@ const ServicesSection = () => {
       <SectionHead
         symbol="#"
         title="services"
-        intro="...lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis."
+        intro="...Transforming raw data into actionable insights through cutting-edge techniques and personalized strategies tailored to your unique business needs."
         withPaddingBottom={true}
       />
       <div className="services">
