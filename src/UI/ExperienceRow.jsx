@@ -23,7 +23,7 @@ const ExperienceRow = (props) => {
         </div>
       </div>
       <div className="exp-col-2">
-        <div className="exp-title">// {props.position}</div>
+        {props.position && <div className="exp-title">// {props.position}</div>}
         <div className="exp-description">{props.description}</div>
       </div>
     </div>

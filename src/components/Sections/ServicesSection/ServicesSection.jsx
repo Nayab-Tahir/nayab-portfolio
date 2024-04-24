@@ -5,10 +5,17 @@ import AnimatedHeading from "../../../UI/AnimatedHeading";
 import Button from "../../../UI/Button";
 import "./ServicesSection.css";
 
+const services = [
+  { name: "_data analysis", color: "#9a99ff" },
+  { name: "_predictive modeling", color: "#e6db74" },
+  { name: "_data preprocessing", color: "#2fcbef" },
+  { name: "_deep learning", color: "#e6db74"},
+];
+
 const ServicesSection = () => {
-  const service_1 = useAnimateText("_data scientist");
-  const service_2 = useAnimateText("_ml engineer");
-  const service_3 = useAnimateText("_ai specialist");
+  const servicesList = services.map((service) =>
+    useAnimateText(service["name"])
+  );
 
   return (
     <Section styleClass="section-none">
@@ -19,15 +26,15 @@ const ServicesSection = () => {
         withPaddingBottom={true}
       />
       <div className="services">
-        <div>
-          <AnimatedHeading content={service_1} color="#2fcbef" size="7vw" />
-        </div>
-        <div>
-          <AnimatedHeading content={service_2} size="7vw" />
-        </div>
-        <div>
-          <AnimatedHeading content={service_3} color="#9a99ff" size="7vw" />
-        </div>
+        {servicesList.map((service, index) => (
+          <div key={index}>
+            <AnimatedHeading
+              content={service}
+              color={services[index]["color"]}
+              size="7vw"
+            />
+          </div>
+        ))}
       </div>
       <Button path="/nayab-portfolio/services" text="all_services" />
     </Section>

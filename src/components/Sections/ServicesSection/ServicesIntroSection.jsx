@@ -6,47 +6,35 @@ import ExperienceRow from "../../../UI/ExperienceRow";
 import "./ServicesSection.css";
 
 const servicesIntro =
-  "…lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, eros at sagittis facilisis, ante est rutrum ligula, at interdum eros sapien vel magna.";
+  "…Transforming raw data into actionable insights through cutting-edge techniques and personalized strategies tailored to your unique business needs";
   const services = [
     {
-      startDate: "Apr 2024",
-      endDate: "Present",
-      companyName: "techtics.ai",
-      position: "JUNIOR DATA SCIENTIST",
+      startDate: "No",
+      endDate: '\u00A0\u00A0\u00A01',
+      companyName: "data analysis",
       description:
-        "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+        "…Our service extracts valuable insights from raw data through advanced techniques and tools, aiding in informed decision-making. We employ statistical methods and data visualization to uncover hidden patterns and trends, providing actionable recommendations for growth;",
     },
     {
-      startDate: "Jan 2024",
-      endDate: "Apr 2024",
-      companyName: "i2cinc",
-      position: "SOFTWARE ENGINEER",
+      startDate: "No",
+      endDate: '\u00A0\u00A0\u00A02',
+      companyName: "predictive modeling",
       description:
-        "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+        "…Utilizing cutting-edge predictive modeling techniques, we forecast future trends and behaviors based on historical data, empowering businesses to make proactive decisions. Our models are robust and scalable, allowing for accurate predictions in dynamic environments;",
     },
     {
-      startDate: "Aug 2023",
-      endDate: "Dec 2023",
-      companyName: "i2cinc",
-      position: "ASSOCIATE SOFTWARE ENGINEER",
+      startDate: "No",
+      endDate: '\u00A0\u00A0\u00A03',
+      companyName: "data preprocessing",
       description:
-        "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+        "…We ensure data quality and prepare datasets for analysis efficiently by employing techniques like outlier detection, normalization, and feature engineering. This enhances accuracy and reliability, leading to more robust insights;",
     },
     {
-      startDate: "Feb 2023",
-      endDate: "Jun 2023",
-      companyName: "pucit",
-      position: "TEACHER ASSISTANT OF DATA SCIENCE",
+      startDate: "No",
+      endDate: '\u00A0\u00A0\u00A04',
+      companyName: "deep learning",
       description:
-        "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
-    },
-    {
-      startDate: "Mar 2022",
-      endDate: "Sep 2022",
-      companyName: "pucit",
-      position: "TEACHER ASSISTANT OF WEV DEVELOPMENT",
-      description:
-        "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+        "…Harnessing artificial neural networks, we enable machines to learn patterns and perform human-like tasks, from image and speech recognition to natural language processing, with tailored, state-of-the-art solutions;",
     },
   ];
 
@@ -68,7 +56,6 @@ const ServicesIntroSection = () => {
           startDate={experience.startDate}
           endDate={experience.endDate}
           companyName={experience.companyName}
-          position={experience.position}
           description={experience.description}
         />
       ))}
