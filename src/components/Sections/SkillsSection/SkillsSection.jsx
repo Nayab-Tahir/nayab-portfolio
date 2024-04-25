@@ -34,13 +34,15 @@ const skills = [
   ],
 ];
 
+const skillsIntro = "...Step into a treasury of skills, each facet reflecting versatility, precision, and adaptability, tailored to meet diverse challenges and fuel success.";
+
 const SkillsSection = () => {
   return (
     <Section styleClass="section-none">
       <SectionHead
         symbol="~"
         title="skills"
-        intro="...lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis."
+        intro={skillsIntro}
         withPaddingBottom={true}
       />
       {skills.map((skillpair, index) => (

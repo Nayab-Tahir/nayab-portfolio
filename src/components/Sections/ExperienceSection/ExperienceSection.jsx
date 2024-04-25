@@ -46,13 +46,15 @@ const experiences = [
   },
 ];
 
+const experienceIntro = "...Embark on a journey through my professional chronicles, where each role tells a story of growth, challenges conquered, and expertise honed.";
+
 const ExperienceSection = () => {
   return (
     <Section styleClass="section-none">
       <SectionHead
         symbol="+"
         title="experience"
-        intro="...lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis."
+        intro={experienceIntro}
         withPaddingBottom={true}
       />
       {experiences.map((experience, index) => (

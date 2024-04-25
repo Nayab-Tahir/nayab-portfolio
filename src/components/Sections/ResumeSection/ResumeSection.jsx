@@ -5,7 +5,7 @@ import useAnimateText from "../../../Hooks/useAnimateText";
 import "./ResumeSection.css";
 
 const resumeIntro =
-  "…lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, eros at sagittis facilisis, ante est rutrum ligula, at interdum eros sapien vel magna.";
+  "…Dive into my professional journey, condensed into a single document, where skills shine and experiences narrate stories of expertise.";
 
 const ResumeSection = () => {
   const heading = useAnimateText("resume");
