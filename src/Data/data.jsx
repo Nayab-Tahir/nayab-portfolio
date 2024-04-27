@@ -7,7 +7,7 @@ export const myCareerList = [
 
 export const terminalData = {
   listDir: {
-    root: ["Projects", "Resume", "About"],
+    root: ["Projects", "Resume", "About", "welcome.txt"],
     Projects: ["ByteInsight", "QuranApp"],
   },
   terminalInstructionsList: [

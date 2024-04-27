@@ -1,83 +1,56 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TerminalHistory from "./TerminalHistory";
 import TerminalLine from "./TerminalLine";
+import useTerminalHistory from "../../../../Hooks/useTerminalHistory";
+import useDirectoryManager from "../../../../Hooks/useDirectoryManager";
+import useFileReader from "../../../../Hooks/useFileReader";
 
 const Terminal = (props) => {
   const [command, setCommand] = useState("");
-  const [terminalLinesList, setTerminalLinesList] = useState([]);
-  const [dir, setDir] = useState("root");
-  const [parentDir, setParentDir] = useState(["root"]);
-
-  const listDir = props.listDir;
+  const [terminalHistory, addToHistory, clearHistory] = useTerminalHistory();
+  const readFile = useFileReader();
+  const [currDir, getAvailableDirs, changeDir] = useDirectoryManager(
+    props.listDir
+  );
 
   const handleCommand = (e) => {
     setCommand(e.target.value);
   };
 
-  const handleEnter = (e) => {
+  const parseCommand = (e) => {
+    const cmdList = e.target.value.split(" ");
+    const currCmd = cmdList[0];
+    let params = [];
+    if (cmdList.length > 1) [, ...params] = cmdList;
+    return { currCmd, params };
+  };
+
+  const handleEnter = async (e) => {
     if (e.key === "Enter") {
-      var currCmd = e.target.value.split(" ")[0];
+      const { currCmd, params } = parseCommand(e);
       setCommand("");
       switch (currCmd) {
         case "ls":
-          setTerminalLinesList((prevList) => [
-            ...prevList,
-            { command: currCmd, path: dir, outputList: listDir[dir] ? listDir[dir]:[] },
-          ]);
+          addToHistory(currCmd, currDir, getAvailableDirs());
           break;
         case "clear":
-          setTerminalLinesList([]);
+          clearHistory();
           break;
         case "cd":
-          var paramDir = e.target.value.split(" ")[1];
-          if (listDir[dir] && listDir[dir].includes(paramDir)) {
-            setParentDir((prevDir) => [...prevDir, dir]);
-            setDir(paramDir);
-            setTerminalLinesList((prevList) => [
-              ...prevList,
-              { command: currCmd + " " + paramDir, path: dir, outputList: [] },
-            ]);
-          }
-          else if (paramDir === "..") {
-            var parDir;
-            if (parentDir.length > 1) {
-              parDir = parentDir[parentDir.length - 1];
-              setParentDir((prevDir) => prevDir.slice(0, -1));
-            }
-            else {
-              parDir = "root";
-            }
-            setTerminalLinesList((prevList) => [
-              ...prevList,
-              { command: currCmd + " " + paramDir, path: dir, outputList: [] },
-            ]);
-            setDir(parDir);
-          }
-          else if (paramDir === "/") {
-            parDir = "root";
-            setTerminalLinesList((prevList) => [
-              ...prevList,
-              { command: currCmd + " " + paramDir, path: dir, outputList: [] },
-            ]);
-            setDir(parDir);
-          }
-          else {
-            setTerminalLinesList((prevList) => [
-              ...prevList,
-              { command: currCmd + " " + paramDir, path: dir, outputList: [paramDir + ' is not a valid directory'] },
-            ]);
-          }
+          const paramDir = params[0];
+          changeDir(paramDir, addToHistory);
+          break;
+        case "cat":
+          const paramFile = params[0];
+          const {output, is_file} = await readFile(paramFile, getAvailableDirs);
+          addToHistory(currCmd + " " + paramFile, currDir, output, is_file);
           break;
         case "":
-          setTerminalLinesList((prevList) => [
-            ...prevList,
-            { command: currCmd, path: dir, outputList: [] },
-          ]);
+          addToHistory(currCmd, currDir, []);
           break;
         default:
-          setTerminalLinesList((prevList) => [
-            ...prevList,
-            { command: currCmd, path: dir, outputList: ["\'" + currCmd + "\' is not a valid command"] },
+          addToHistory(currCmd, currDir, [
+            "'" + currCmd + "' is not a valid command",
           ]);
           break;
       }
@@ -87,13 +60,14 @@ const Terminal = (props) => {
   return (
     <div className="terminal">
       <div className="terminal-head">&lt; Terminal /&gt;</div>
-      <TerminalHistory terminalLinesList={terminalLinesList} />
+      <TerminalHistory terminalLinesList={terminalHistory} />
       <TerminalLine
         isActive={true}
         command={command}
         handleCommand={handleCommand}
         handleEnter={handleEnter}
-        dir={dir} />
+        dir={currDir}
+      />
     </div>
   );
 };
