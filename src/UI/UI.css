@@ -108,7 +108,7 @@ p.head-intro {
 
 
 /* --ExperieneRow-- */
-.exp-row {
+.data-row {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   height: 19vh;
@@ -116,36 +116,36 @@ p.head-intro {
   display: flex;
 }
 
-.exp-col-1 {
+.data-col-1 {
   width: 50%;
   display: flex;
   padding: 25px;
   justify-content: space-between;
 }
 
-.exp-date{
+.data-sideheading{
   color: white;
   margin-left: 70px;
   font-size: 1.29vw;
 }
 
-.exp-company-name{
+.data-mainheading{
   margin-right: 20px;
 }
 
-.exp-col-2 {
+.data-col-2 {
   text-align: left;
   width: 50%;
   padding: 30px;
   border-left: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.exp-title {
+.data-col2-title {
   color: white;
   font-size: 1.29vw;
 }
 
-.exp-description{
+.data-description{
   color: rgb(230, 219, 116);
   font-size: 1.29vw;
   margin-top: 20px;
