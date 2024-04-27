@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import TerminalHistory from "./TerminalHistory";
 import TerminalLine from "./TerminalLine";
 import useTerminalHistory from "../../../../Hooks/useTerminalHistory";
