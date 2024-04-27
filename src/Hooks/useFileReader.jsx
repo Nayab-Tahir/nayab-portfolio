@@ -1,6 +1,6 @@
 const useFileReader = () => {
   const fetchData = async (filename) => {
-    const resp = await fetch(`/${filename}`);
+    const resp = await fetch(`/nayab-portfolio/Files/${filename}`);
     const data = await resp.text();
     return data.split("\n");
   };
