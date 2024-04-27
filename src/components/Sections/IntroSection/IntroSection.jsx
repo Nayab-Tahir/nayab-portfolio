@@ -2,8 +2,7 @@ import Section from "../../../UI/Section/Section";
 import AnimatedHeading from "../../../UI/AnimatedHeading";
 import useAnimateTextList from "../../../Hooks/useAnimateTextList";
 import "./IntroSection.css";
-
-const myCareerList = ["_ai specialist", "_ml engineer", "_data scientist", "_web developer"];
+import { myCareerList } from "../../../Data/data";
 
 const IntroSection = () => {
   const career = useAnimateTextList(myCareerList);

@@ -10,7 +10,7 @@ const experiences = [
     companyName: "techtics.ai",
     position: "JUNIOR DATA SCIENTIST",
     description:
-      "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+      "…As a Junior Data Scientist at Techtics.ai, I leverage AI and ML for innovative solutions and insights, using advanced analysis to drive informed decisions and transformative data-driven strategies for growth;",
   },
   {
     startDate: "Jan 2024",
@@ -18,7 +18,7 @@ const experiences = [
     companyName: "i2cinc",
     position: "SOFTWARE ENGINEER",
     description:
-      "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+      "…As a Software Engineer at i2c, I enhanced the End-of-Day Scheduler service by implementing fixes and optimizing query performance, ensuring smoother operations and faster processing for overall system efficiency;",
   },
   {
     startDate: "Aug 2023",
@@ -26,7 +26,7 @@ const experiences = [
     companyName: "i2cinc",
     position: "ASSOCIATE SOFTWARE ENGINEER",
     description:
-      "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+      "…As an Associate Software Engineer at i2c, I enhanced the Push Scheduler and Campaign Scheduler services and analyzed client queries within the Alert Service;",
   },
   {
     startDate: "Feb 2023",
@@ -34,7 +34,7 @@ const experiences = [
     companyName: "pucit",
     position: "TEACHER ASSISTANT OF DATA SCIENCE",
     description:
-      "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+      "…At pucit, I served as a dedicated Data Science Teaching Assistant, providing comprehensive support to students through guidance, mentoring, and assignment facilitation;",
   },
   {
     startDate: "Mar 2022",
@@ -42,11 +42,12 @@ const experiences = [
     companyName: "pucit",
     position: "TEACHER ASSISTANT OF WEV DEVELOPMENT",
     description:
-      "...lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui tortor. Maecenas cursus velit sit amet orci tincidunt hendrerit. Etiam tincidunt nisl at nibh ullamcorper;",
+      "…At pucit, I actively assisted web development students as a committed Teaching Assistant, facilitating lab sessions and providing guidance in the subject matter;",
   },
 ];
 
-const experienceIntro = "...Embark on a journey through my professional chronicles, where each role tells a story of growth, challenges conquered, and expertise honed.";
+const experienceIntro =
+  "…Embark on a journey through my professional chronicles, where each role tells a story of growth, challenges conquered, and expertise honed.";
 
 const ExperienceSection = () => {
   return (

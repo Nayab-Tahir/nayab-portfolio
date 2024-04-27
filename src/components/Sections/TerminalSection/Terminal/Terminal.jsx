@@ -2,16 +2,13 @@ import { useState } from "react";
 import TerminalHistory from "./TerminalHistory";
 import TerminalLine from "./TerminalLine";
 
-const listDir = {
-  "root": ["Projects", "Resume", "About"],
-  "Projects": ["ByteInsight", "QuranApp"]
-};
-
-const Terminal = () => {
+const Terminal = (props) => {
   const [command, setCommand] = useState("");
   const [terminalLinesList, setTerminalLinesList] = useState([]);
   const [dir, setDir] = useState("root");
   const [parentDir, setParentDir] = useState(["root"]);
+
+  const listDir = props.listDir;
 
   const handleCommand = (e) => {
     setCommand(e.target.value);
