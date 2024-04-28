@@ -4,11 +4,13 @@ import TerminalLine from "./TerminalLine";
 import useTerminalHistory from "../../../../Hooks/useTerminalHistory";
 import useDirectoryManager from "../../../../Hooks/useDirectoryManager";
 import useFileReader from "../../../../Hooks/useFileReader";
+import { useNavigate } from "react-router-dom";
 
 const Terminal = (props) => {
   const [command, setCommand] = useState("");
   const [terminalHistory, addToHistory, clearHistory] = useTerminalHistory();
   const readFile = useFileReader();
+  const navigate = useNavigate();
   const [currDir, getAvailableDirs, changeDir] = useDirectoryManager(
     props.listDir
   );
@@ -42,8 +44,19 @@ const Terminal = (props) => {
           break;
         case "cat":
           const paramFile = params[0];
-          const {output, is_file} = await readFile(paramFile, getAvailableDirs);
+          const { output, is_file } = await readFile(
+            paramFile,
+            getAvailableDirs
+          );
           addToHistory(currCmd + " " + paramFile, currDir, output, is_file);
+          break;
+        case "open":
+          const pageLink = params[0];
+          if (getAvailableDirs().includes(pageLink) && pageLink.includes(".page"))
+            navigate(`./${pageLink.split(".")[0]}`);
+          addToHistory(currCmd + " " + pageLink, currDir, [
+            pageLink + " is not a valid Page.",
+          ]);
           break;
         case "":
           addToHistory(currCmd, currDir, []);

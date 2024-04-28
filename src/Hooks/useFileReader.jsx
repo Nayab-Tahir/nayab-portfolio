@@ -6,7 +6,7 @@ const useFileReader = () => {
   };
 
   const readFile = async (filename, getAvailableDirs) => {
-    if (getAvailableDirs().includes(filename)) {
+    if (getAvailableDirs().includes(filename) && filename.includes(".txt")) {
         return { output: await fetchData(filename), is_file: true};
     } else {
         return { output:[filename + ", no such File"], is_file:false};

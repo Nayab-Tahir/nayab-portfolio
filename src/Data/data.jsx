@@ -7,8 +7,9 @@ export const myCareerList = [
 
 export const terminalData = {
   listDir: {
-    root: ["Projects", "Resume", "About", "welcome.txt"],
-    Projects: ["ByteInsight", "QuranApp"],
+    root: ["resume.page", "welcome.txt", "Pages", "Files"],
+    Pages: ["about.page", "portfolio.page", "services.page", "resume.page", "contact.page"],
+    Files: ["welcome.txt"],
   },
   terminalInstructionsList: [
     {
@@ -24,17 +25,17 @@ export const terminalData = {
     {
       num: 3,
       title: "ls",
-      description: "List files and directories",
+      description: "List files, directories and pages.",
     },
     {
       num: 4,
-      title: "mkdir",
-      description: "Create a new directory",
+      title: "cat",
+      description: "Display the contents of a file {.txt}",
     },
     {
       num: 5,
-      title: "rm",
-      description: "Remove a file or directory",
+      title: "open",
+      description: "Open specified page {.page}",
     },
     {
       num: 6,
@@ -48,8 +49,8 @@ export const terminalData = {
     },
     {
       num: 8,
-      title: "cat",
-      description: "Display the contents of a file",
+      title: "cp",
+      description: "Copy a file or directory",
     },
   ],
 };
