@@ -104,7 +104,17 @@
 }
 
 .terminal-body-output > div {
+  color: grey;
+  background: none;
+}
+
+.terminal-body-output > div.page {
   color: #2fcbef;
+  background: none;
+}
+
+.terminal-body-output > div.file{
+  color: skyblue;
   background: none;
 }
 

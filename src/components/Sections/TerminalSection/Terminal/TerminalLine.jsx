@@ -17,9 +17,18 @@ const TerminalLine = (props) => {
     content = (
       <div className="terminal-body-line">
         <div className="terminal-body-output">
-          {props.outputList.map((output, index) => (
-            <div key={index}>{output}</div>
-          ))}
+          {props.outputList.map((output, index) => {
+            let class_name = output.includes(".page")
+              ? "page"
+              : output.includes(".txt")
+              ? "file"
+              : "";
+            return (
+              <div className={class_name} key={index}>
+                {output}
+              </div>
+            );
+          })}
         </div>
       </div>
     );
