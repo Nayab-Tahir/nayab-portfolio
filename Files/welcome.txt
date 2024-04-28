@@ -1,2 +1,2 @@
-hi, how are you doing?
-coding is amazing.
+hi, welcome to nayab-portfolio!
+You can use Terminal for exploring it.
