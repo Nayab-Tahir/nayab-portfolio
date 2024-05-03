@@ -12,7 +12,8 @@
 
 .terminal-instructions {
   height: 100%;
-  width: 40%;
+  /* width: 40%; */
+  min-width: 460px;
   display: flex;
   flex-direction: column;
   padding-left: 7px;
@@ -53,7 +54,8 @@
 
 .terminal {
   height: 100%;
-  width: 60%;
+  /* width: 60%; */
+  flex-grow: 1;
   border-left: 1px solid rgba(255, 255, 255, 0.012);
   display: flex;
   flex-direction: column;
@@ -122,3 +124,4 @@
   color: #e6db74;
   background: none;
 }
+
