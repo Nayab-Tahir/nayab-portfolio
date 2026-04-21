@@ -1,14 +1,14 @@
 export const myCareerList = [
-  "_ai specialist",
-  "_ml engineer",
-  "_data scientist",
-  "_web developer",
+  "_ai engineer",
+  "_genai developer",
+  "_rag specialist",
+  "_backend engineer",
 ];
 
 export const terminalData = {
   listDir: {
     root: ["resume.page", "welcome.txt", "Pages", "Files"],
-    Pages: ["about.page", "portfolio.page", "services.page", "resume.page", "contact.page"],
+    Pages: ["about.page", "projects.page", "services.page", "resume.page", "contact.page"],
     Files: ["welcome.txt"],
   },
   terminalInstructionsList: [
@@ -57,46 +57,46 @@ export const terminalData = {
 
 export const aboutMeIntro = {
   intro:
-    "...Passionate data scientist, Python aficionado, unlocking insights to shape the future. Ready to innovate?",
+    "...AI Engineer crafting production-grade Generative AI, RAG systems, and intelligent agents. Let's build what's next?",
   "short-desc":
-    "...Aspiring data scientist adept in [Python, Java, ML, AI]; var codeSage = 'Pro_dev' + 'eager_collab' + 'lifelong_learner';",
+    "...AI Engineer building [GenAI, RAG, Voice AI]; var stack = 'LangChain' + 'vector_dbs' + 'Django_DRF' + 'LLM_orchestration';",
   "detailed-desc":
-    "...As an aspiring data scientist, I possess advanced skills in Python, SQL, and TensorFlow, specializing in machine learning and deep learning techniques. My experience includes implementing neural networks and convolutional neural networks for image recognition tasks. I am driven by a passion for extracting meaningful insights from complex datasets and am eager to contribute to projects at the forefront of AI innovation;",
+    "...I design and ship production GenAI systems — multi-tenant RAG platforms, regulatory compliance agents, real-time voice AI, and AI-driven analytics — combining LangChain, vector databases (Pinecone, Chroma, FAISS), and robust Django/FastAPI backends to turn LLMs into reliable, enterprise-ready products;",
   "more-details": {
     "short-desc":
-      "...I have 9 months of experience transitioning from Fintech Java development to Junior Data Scientist, I hold a BS in Software Engineering, specializing in machine learning and deep learning with a profound passion;",
+      "...AI Engineer at Techtics.ai since Apr 2024. BS Software Engineering (FCIT, CGPA 3.63). Focused on GenAI, RAG, multi-agent systems, and backend engineering;",
     "detailed-desc":
-      "…With a background in BS Software Engineering, my proficiency spans Python, Java, C/C++, and frameworks such as TensorFlow, Keras, scikit-learn, matplotlib, seaborn, as I eagerly embrace the diverse realms of data science. My experience includes working on a MERN stack project during my final year. I have also completed Coursera Specializations in machine learning and deep learning, further solidifying my expertise in these areas.",
+      "…I specialize in Generative AI and RAG architectures: building multi-tenant platforms, policy-aware compliance agents, and voice-first assistants. My toolbox is LangChain, LlamaIndex, Pinecone/Chroma/FAISS, OpenAI and Gemini, LiveKit for real-time voice, and Django REST Framework/FastAPI on the backend. I've integrated AI systems with enterprise platforms (Zoho, TrainerCentral) and hold the DeepLearning.AI Deep Learning and Machine Learning Specializations.",
   },
 };
 
 export const servicesData = {
   servicesIntro:
-    "…Transforming raw data into actionable insights through cutting-edge techniques and personalized strategies tailored to your unique business needs.",
+    "…Turning business needs into production-grade AI — custom RAG agents, compliance automation, voice AI, and LLM-powered analytics built to scale.",
   services: [
     {
-      name: "data analysis",
+      name: "generative ai & rag",
       color: "#9a99ff",
       description:
-        "…Our service extracts valuable insights from raw data through advanced techniques and tools, aiding in informed decision-making. We employ statistical methods and data visualization to uncover hidden patterns and trends, providing actionable recommendations for growth;",
+        "…Design and ship RAG architectures with LangChain, LlamaIndex, and vector stores (Pinecone, Chroma, FAISS). Configurable ingestion for documents, web, and multimedia, with pluggable LLM and embedding providers;",
     },
     {
-      name: "predictive modeling",
+      name: "ai agents & automation",
       color: "#e6db74",
       description:
-        "…Utilizing cutting-edge predictive modeling techniques, we forecast future trends and behaviors based on historical data, empowering businesses to make proactive decisions. Our models are robust and scalable, allowing for accurate predictions in dynamic environments;",
+        "…Build multi-agent systems and policy-aware AI assistants for regulatory compliance, risk assessment, and business workflows. Integrates with enterprise tools (Zoho, TrainerCentral) to automate real work;",
     },
     {
-      name: "data preprocessing",
+      name: "voice & real-time ai",
       color: "#2fcbef",
       description:
-        "…We ensure data quality and prepare datasets for analysis efficiently by employing techniques like outlier detection, normalization, and feature engineering. This enhances accuracy and reliability, leading to more robust insights;",
+        "…Develop real-time voice AI assistants using LiveKit with full STT → RAG → TTS pipelines, delivering context-aware audio responses grounded in authoritative sources;",
     },
     {
-      name: "deep learning",
+      name: "backend & api engineering",
       color: "#e6db74",
       description:
-        "…Harnessing artificial neural networks, we enable machines to learn patterns and perform human-like tasks, from image and speech recognition to natural language processing, with tailored, state-of-the-art solutions;",
+        "…Production backends with Django REST Framework and FastAPI — multi-tenant architectures, REST APIs, embeddable widgets, and integrations that turn AI prototypes into shippable products;",
     },
   ],
 };
@@ -110,41 +110,41 @@ export const skillsData = {
         symbol: ".py",
         title: "python",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
+          "primary language for AI/ML work — LangChain, LlamaIndex, FastAPI, and every data pipeline I ship;",
       },
       {
-        symbol: ".ml",
-        title: "machine learning",
+        symbol: ".lc",
+        title: "langchain",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
-      },
-    ],
-    [
-      {
-        symbol: ".dl",
-        title: "deep learning",
-        description:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
-      },
-      {
-        symbol: ".jv",
-        title: "java",
-        description:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
+          "orchestration for RAG pipelines, agents, tool use, and prompt flows across OpenAI, Gemini, and other LLM providers;",
       },
     ],
     [
       {
-        symbol: ".tf",
-        title: "tensorflow",
+        symbol: ".dj",
+        title: "django / drf",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
+          "production backends for multi-tenant AI platforms — REST APIs, auth, data modeling, and LLM-backed endpoints;",
       },
       {
-        symbol: ".pt",
-        title: "pytorch",
+        symbol: ".vs",
+        title: "vector search",
         description:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo;",
+          "Pinecone, Chroma, and FAISS for embeddings-based retrieval — tuning chunking, hybrid search, and recall quality;",
+      },
+    ],
+    [
+      {
+        symbol: ".lk",
+        title: "livekit voice",
+        description:
+          "real-time voice AI agents with STT → RAG → TTS pipelines and low-latency audio streaming;",
+      },
+      {
+        symbol: ".dk",
+        title: "docker",
+        description:
+          "containerizing AI services and backends for reproducible deploys across dev and production;",
       },
     ],
   ],
@@ -188,41 +188,80 @@ export const experienceData = {
       startDate: "Apr 2024",
       endDate: "Present",
       companyName: "techtics.ai",
-      position: "JUNIOR DATA SCIENTIST",
+      position: "DATA SCIENTIST / AI ENGINEER",
       description:
-        "…As a Junior Data Scientist at Techtics.ai, I leverage AI and ML for innovative solutions and insights, using advanced analysis to drive informed decisions and transformative data-driven strategies for growth;",
-    },
-    {
-      startDate: "Jan 2024",
-      endDate: "Apr 2024",
-      companyName: "i2cinc",
-      position: "SOFTWARE ENGINEER",
-      description:
-        "…As a Software Engineer at i2c, I enhanced the End-of-Day Scheduler service by implementing fixes and optimizing query performance, ensuring smoother operations and faster processing for overall system efficiency;",
+        "…At Techtics.ai I design and ship production-grade Generative AI systems — multi-tenant RAG platforms, regulatory compliance agents, and risk assessment tools — built on LangChain, vector databases, and Django REST Framework, integrated with enterprise platforms like Zoho and TrainerCentral;",
     },
     {
       startDate: "Aug 2023",
-      endDate: "Dec 2023",
-      companyName: "i2cinc",
-      position: "ASSOCIATE SOFTWARE ENGINEER",
+      endDate: "Apr 2024",
+      companyName: "i2c",
+      position: "SOFTWARE ENGINEER",
       description:
-        "…As an Associate Software Engineer at i2c, I enhanced the Push Scheduler and Campaign Scheduler services and analyzed client queries within the Alert Service;",
+        "…At i2c I enhanced the End-of-Day Scheduler, Push Scheduler, and Campaign Scheduler services, shipping fixes and optimizing slow queries to make core batch systems faster and more reliable;",
     },
     {
       startDate: "Feb 2023",
       endDate: "Jun 2023",
-      companyName: "pucit",
+      companyName: "fcit",
       position: "TEACHER ASSISTANT OF DATA SCIENCE",
       description:
-        "…At pucit, I served as a dedicated Data Science Teaching Assistant, providing comprehensive support to students through guidance, mentoring, and assignment facilitation;",
+        "…At FCIT I supported Data Science students as a Teaching Assistant — mentoring on assignments, labs, and core concepts throughout the semester;",
     },
     {
       startDate: "Mar 2022",
       endDate: "Sep 2022",
-      companyName: "pucit",
-      position: "TEACHER ASSISTANT OF WEV DEVELOPMENT",
+      companyName: "fcit",
+      position: "TEACHER ASSISTANT OF WEB DEVELOPMENT",
       description:
-        "…At pucit, I actively assisted web development students as a committed Teaching Assistant, facilitating lab sessions and providing guidance in the subject matter;",
+        "…At FCIT I assisted Web Development students as a Teaching Assistant, facilitating lab sessions and guiding them through core frontend and backend concepts;",
+    },
+  ],
+};
+
+export const projectsData = {
+  projectsIntro:
+    "…A showcase of production-grade AI systems — RAG platforms, compliance agents, voice assistants, and analytics tools built to ship, not to demo.",
+  projects: [
+    {
+      tag1: "genai",
+      tag2: "langchain",
+      name: "ragpulse",
+      role: "MULTI-TENANT RAG AGENT PLATFORM",
+      description:
+        "…A no-code platform for building and deploying custom RAG agents with configurable ingestion for documents, web, and multimedia, pluggable LLM/embedding/vector-store abstraction (OpenAI/Gemini, Pinecone/Chroma), per-agent system prompts and isolated memory, plus REST APIs and embeddable widgets for external integrations;",
+    },
+    {
+      tag1: "compliance",
+      tag2: "rag",
+      name: "dot compliance",
+      role: "REGULATORY AI ASSISTANT (USA)",
+      description:
+        "…A policy-aware RAG agent for DOT and FMCSA compliance, combining continuously synced government regulations with company-specific policies and integrated with Zoho Email and TrainerCentral for automated responses and training workflows;",
+    },
+    {
+      tag1: "voice ai",
+      tag2: "livekit",
+      name: "aalim360",
+      role: "REAL-TIME VOICE AI ASSISTANT",
+      description:
+        "…A real-time voice-based RAG agent for Quran, Hadith, and Islamic jurisprudence — full STT → RAG → TTS pipeline with authoritative Islam360 audio, delivering context-aware answers with authentic recitations;",
+    },
+    {
+      tag1: "iso",
+      tag2: "risk",
+      name: "crimsonrisk.ai",
+      role: "ISO COMPLIANCE & RISK ASSESSMENT",
+      description:
+        "…An AI-driven ISO compliance assessment system using conversational data collection, with risk scoring and gap analysis that guides organizations toward compliance readiness with minimal manual effort;",
+    },
+    {
+      tag1: "fintech",
+      tag2: "analytics",
+      name: "finly",
+      role: "AI CFO & FINANCIAL INTELLIGENCE",
+      description:
+        "…A multi-company financial analytics platform integrating Shopify, Google Ads, and Meta Ads — pipelines for transaction normalization, categorization, and ROI analytics, with an AI CFO assistant generating insights and revenue optimization guidance;",
     },
   ],
 };

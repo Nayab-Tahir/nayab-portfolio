@@ -1,0 +1,263 @@
+.project-doc-card {
+  max-width: 78ch;
+  margin: 0 auto 6vh;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-doc-card:hover {
+  border-color: rgba(154, 153, 255, 0.35);
+  box-shadow: 0 2px 30px rgba(154, 153, 255, 0.15);
+}
+
+.project-doc-tab {
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 20px;
+  color: #7a7a7a;
+  font-size: 0.95vw;
+  text-align: left;
+}
+
+.project-doc-gutter {
+  display: flex;
+  text-align: left;
+}
+
+.project-doc-linenums {
+  flex: 0 0 auto;
+  padding: 16px 0;
+  background: rgba(0, 0, 0, 0.15);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.doc-linenum {
+  color: #555;
+  font-size: 1.1vw;
+  line-height: 1.7em;
+  padding: 0 1ch 0 1.5ch;
+  text-align: right;
+  min-width: 3.5ch;
+}
+
+.project-doc-body {
+  flex: 1 1 auto;
+  padding: 16px 24px;
+  font-size: 1.1vw;
+  line-height: 1.7em;
+  min-width: 0;
+}
+
+.doc-line {
+  white-space: pre;
+  overflow: hidden;
+}
+
+.doc-delim,
+.doc-star {
+  color: #6b6b6b;
+}
+
+.doc-key {
+  color: #9a99ff;
+  display: inline-block;
+  min-width: 10ch;
+}
+
+.doc-value {
+  color: #e6db74;
+}
+
+/* font-size intentionally omitted — matches body (1.1vw) so line-number
+   rows stay aligned with body rows. Upsizing breaks the gutter alignment. */
+.doc-name {
+  color: #fff;
+}
+
+.doc-cursor {
+  color: #e6db74;
+  animation: blink 0.8s infinite;
+  margin-left: 2px;
+}
+
+/* ─── IDE layout ─── */
+
+.projects-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 140px;
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px 0 80px;
+  align-items: start;
+  text-align: left;
+}
+
+.projects-main {
+  min-width: 0;
+}
+
+.project-slot {
+  scroll-margin-top: 24px;
+  border-radius: 10px;
+}
+
+.project-slot.active > .project-doc-card {
+  border-color: rgba(154, 153, 255, 0.4);
+  box-shadow: 0 2px 30px rgba(154, 153, 255, 0.15);
+}
+
+/* ─── Sidebar ─── */
+
+.projects-sidebar {
+  padding: 0 0 10px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 6px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+  font-size: 1vw;
+  overflow: hidden;
+  position: sticky;
+  top: 50vh;
+  transform: translateY(-50%);
+  align-self: start;
+}
+
+.projects-sidebar:hover,
+.projects-sidebar:focus-within {
+  opacity: 1;
+}
+
+.sidebar-header {
+  font-size: 0.75vw;
+  letter-spacing: 2px;
+  color: #7a7a7a;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  margin-bottom: 6px;
+}
+
+.sidebar-folder {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 0.95vw;
+  color: #9a99ff;
+}
+
+.sidebar-folder .folder-count {
+  color: #555;
+  font-size: 0.8vw;
+  margin-left: auto;
+}
+
+.sidebar-files {
+  position: relative;
+  margin: 4px 0 0 22px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-file {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 7px 14px 7px 10px;
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
+  color: #8a8a8a;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.sidebar-file:hover {
+  color: #e6db74;
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(1px);
+}
+
+.sidebar-file.active {
+  color: #fff;
+  background: rgba(154, 153, 255, 0.14);
+  border-left-color: #9a99ff;
+}
+
+.sidebar-icon {
+  color: #9a99ff;
+  min-width: 1ch;
+  font-size: 0.9em;
+}
+
+/* ─── Minimap ─── */
+
+.projects-minimap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  cursor: default;
+  position: sticky;
+  top: 50vh;
+  transform: translateY(-50%);
+  align-self: start;
+}
+
+.projects-minimap:hover {
+  opacity: 0.95;
+}
+
+.minimap-block {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px 6px;
+  border-radius: 3px;
+  outline: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.minimap-block.active {
+  background: rgba(154, 153, 255, 0.08);
+  outline-color: rgba(154, 153, 255, 0.35);
+}
+
+.minimap-bar {
+  height: 3px;
+  background: rgba(122, 122, 122, 0.4);
+  border-radius: 1px;
+  transition: background 0.3s ease;
+}
+
+.minimap-block.active .minimap-bar {
+  background: rgba(230, 219, 116, 0.55);
+}
+
+/* ─── Mobile fallback ─── */
+
+@media (max-width: 900px) {
+  .projects-layout {
+    grid-template-columns: 1fr;
+  }
+  .projects-sidebar,
+  .projects-minimap {
+    display: none;
+  }
+}

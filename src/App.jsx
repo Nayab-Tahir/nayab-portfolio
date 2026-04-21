@@ -6,6 +6,7 @@ import ResumePage from "./Pages/ResumePage";
 import AboutPage from "./Pages/AboutPage";
 import ServicesPage from "./Pages/ServicesPage";
 import ContactPage from "./Pages/ContactPage";
+import ProjectsPage from "./Pages/ProjectsPage";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/nayab-portfolio/" element={<HomePage />} />
         <Route path="/nayab-portfolio/about" element={<AboutPage />} />
+        <Route path="/nayab-portfolio/projects" element={<ProjectsPage />} />
         <Route path="/nayab-portfolio/services" element={<ServicesPage />} />
         <Route path="/nayab-portfolio/resume" element={<ResumePage />} />
         <Route path="/nayab-portfolio/contact" element={<ContactPage/>} />

@@ -16,8 +16,8 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/nayab-portfolio/portfolio">
-            _portfolio
+          <NavLink to="/nayab-portfolio/projects">
+            _projects
           </NavLink>
         </li>
         <li>
